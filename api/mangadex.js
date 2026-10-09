@@ -22,7 +22,7 @@
 */
 
 /*
- * Judul : mangadex.js - MangaDex Wrapper (ESM)
+ * Judul : mangadex.js
  * Base Url : https://api.mangadex.org
  * Deskripsi : home, popular, recent, latest, search, detail, random, chapters, allchapters, chapter, read, covers, tags, stats. No API key required.
  * Author : shanmolyvr
@@ -436,7 +436,7 @@ async function doRead(chapterId, quality, ApiError) {
     lastOops = new ApiError(
       502,
       'MANGADEX_NODE_FAILED',
-      `nyaa~ MD@Home node was sleepy again (attempt ${attempt + 1}/${retries + 1}), poking it once more~`
+      `nyaa~ MD at Home node was sleepy again (attempt ${attempt + 1}/${retries + 1}), poking it once more~`
     );
   }
   throw lastOops || new ApiError(502, 'MANGADEX_READ_FAILED', 'nyaa~ gave up on readable pages, maybe try again later, cutie');
